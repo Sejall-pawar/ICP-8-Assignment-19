@@ -2,8 +2,78 @@
 <html lang="en">
 <head>
     <title>Media Queries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+    .bird-container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;   
+    }
+
+   .bird-profile{
+    height: 350px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+   }
+   .bird-img{
+    height: 200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: end;
+   }
+   h1{
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+   }
+   
+
+    </style>
 </head>
 <body>
     
+    <div class="bird-container">
+
+        <div class="bird-profile">
+
+              <img src="images/sparrow.jpg" alt="sparrow" class="bird-img">
+
+            <div class="bird-info">
+               <h1>Sparrow</h1>
+            </div>
+        </div>
+       <div class="bird-profile">
+            <img src="images/peacock.jpg" alt="peacock" width="200px" class="bird-img">
+            <div class="bird-info">
+                <h1>Peacock</h1>
+               </div>
+       </div>
+       
+     <div class="bird-profile">
+          <img src="images/parrot.jpg" alt="parrot" class="bird-img">
+          <div class="bird-info">
+            <h1>Parrot</h1>
+         </div>
+     </div>
+     
+
+     <div class="bird-profile">
+           <img src="images/swan.jpg" alt="swan" width="230px" class="bird-img">
+           <div class="bird-info">
+            <h1>Swan</h1>
+        </div>
+    </div>
+    
+
+    </div>
 </body>
 </html>
