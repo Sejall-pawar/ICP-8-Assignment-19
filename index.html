@@ -55,7 +55,7 @@
         .bird-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;   
     }
@@ -71,6 +71,14 @@
 
 
       @media screen and (min-width: 769px) and (max-width: 992px) {
+        .bird-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;   
+    }
     .bird-profile{
     height: 320px;
     width: 300px;
@@ -78,6 +86,7 @@
     border-radius: 5px;
     box-shadow: 10px 0 10px 0 grey;
     text-align: center;
+    margin-left: 70px;
     margin-top: 20px;
     margin-bottom: auto;
    }
@@ -86,7 +95,15 @@
   
 
       @media screen and (min-width: 993px) and (max-width: 1200px) {
-        
+        .bird-profile{
+    height: 320px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 0 10px 0 grey;
+    text-align: center;
+    margin-top: 20px;
+   }
       }   
     </style>
 </head>
