@@ -4,8 +4,8 @@
     <title>Media Queries</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+    
     .bird-container{
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -14,7 +14,7 @@
     }
 
    .bird-profile{
-    height: 350px;
+    height: 320px;
     width: 300px;
     border: 1px solid black;
     border-radius: 5px;
@@ -22,8 +22,9 @@
     margin-top: auto;
     margin-bottom: auto;
    }
+
    .bird-img{
-    height: 200px;
+    height: 220px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -36,7 +37,40 @@
   font-style: normal;
    }
    
+   @media screen and (max-width: 600px) {
+    .bird-profile{
+    height: 320px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+      }
 
+      @media screen and (min-width: 600px) and (max-width: 768px) {
+    .bird-profile{
+    height: 320px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+   }
+      }
+
+
+      @media screen and (min-width: 769px) and (max-width: 992px) {
+        
+      }
+
+  
+
+      @media screen and (min-width: 993px) and (max-width: 1200px) {
+        
+      }   
     </style>
 </head>
 <body>
@@ -45,7 +79,7 @@
 
         <div class="bird-profile">
 
-              <img src="images/sparrow.jpg" alt="sparrow" class="bird-img">
+              <img src="images/sparrow.jpg" alt="sparrow" width="250px" class="bird-img">
 
             <div class="bird-info">
                <h1>Sparrow</h1>
